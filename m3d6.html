@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="m3d6.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbarcolor col-12">
+        <div class="container">
+            <div class="logo">
+                <i class="fa-solid fa-comment-music"></i>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-4">
+                    <li class="nav-item">
+                        <a class="nav-link px-3 active" aria-current="page" href="#logo">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#best-album">Album</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#favorite-album">MyBest</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="#to-avoid">to Avoid</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Jumbotron -->
+    <div class="w-100 myb-5">
+        <div class="p-5 mb-4 bg-light custom-bg">
+            <div class="container-fluid py-5">
+                <h1 class="display-5 fw-bold mx-4 text-white">My Music</h1>
+                <p class="col-md-8 fs-4 fw-bold text-light-emphasis mx-4">
+                    Live your Music, Everyday!
+                </p>
+            </div>
+        </div>
+    </div>
+    <main class="container">
+
+        <!-- FIRST SECTION -->
+        <div class="container my-5" id="best-album">
+            <button onclick="showHide(this)" class="btn btn-secondary">
+				Show / Hide <br> "the Cards"
+			</button>
+            <div class="row gy-3">
+
+                <div class="col-6 col-md-4 col-lg-3 py-2 position-relative">
+                    <div class="myCard">
+                        <div class="card w-100">
+                            <img src="assets/AdayAtTheRaces-Queen.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5>Queen</h5>
+                                <h6>A Day At The Races</h6>
+                                <p class="card-text">1976</p>
+                            </div>
+                            <span class="position-absolute rotazione z-3 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Rock
+                                <span class="visually-hidden rotazione">unread messages</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 py-2">
+                    <div class="myCard">
+                        <div class="card w-100">
+                            <img src="assets/All_Things_Must_Pass_BW.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5>George Harrison</h5>
+                                <h6>All things Must Pass</h6>
+                                <p class="card-text">1996</p>
+                            </div>
+                            <span class="position-absolute rotazione z-3 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Rock
+                                <span class="visually-hidden rotazione">unread messages</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 py-2">
+                    <div class="myCard">
+                        <div class="card w-100">
+                            <img src="assets\changes.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5>David Bowie</h5>
+                                <h6>Changes</h6>
+                                <p class="card-text">1975</p>
+                            </div>
+                            <span class="position-absolute rotazione z-3 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Rock
+                                <span class="visually-hidden rotazione">unread messages</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 py-2">
+                    <div class="myCard">
+                        <div class="card w-100">
+                            <img src="assets\foo.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5>Foo Fighters</h5>
+                                <h6>Foo Fighters</h6>
+                                <p class="card-text">2002</p>
+                            </div>
+                            <span class="position-absolute rotazione z-3 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Rock
+                                <span class="visually-hidden rotazione">unread messages</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 py-2">
+                    <div class="myCard">
+                        <div class="card w-100">
+                            <img src="assets\Rainbow.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5>Queen</h5>
+                                <h6>Live at The Rainbow</h6>
+                                <p class="card-text">1974</p>
+                            </div>
+                            <span class="position-absolute rotazione z-3 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Rock
+                                <span class="visually-hidden rotazione">unread messages</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 py-2">
+                    <div class="myCard">
+                        <div class="card w-100">
+                            <img src="assets\The_Beatles_1_album_cover.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5>The Beatles</h5>
+                                <h6> 1 </h5>
+                                    <p class="card-text">1995</p>
+                            </div>
+                            <span class="position-absolute rotazione z-3 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Rock
+                                <span class="visually-hidden rotazione">unread messages</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 py-2">
+                    <div class="myCard">
+                        <div class="card w-100">
+                            <img src="assets\travis.jpg" class="card-img-top w-100" alt="...">
+                            <div class="card-body">
+                                <h5>Travis</h5>
+                                <h6>Singles</h5>
+                                    <p class="card-text">2007</p>
+                            </div>
+                            <span class="position-absolute rotazione z-3 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Rock
+                                <span class="visually-hidden rotazione">unread messages</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 py-2">
+                    <div class="myCard">
+                        <div class="card w-100">
+                            <img src="assets/Queen_News_Of_The_World.png" class="card-img-top w-100 b-0" alt="...">
+                            <div class="card-body">
+                                <h5>Queen</h5>
+                                <h6>News of the World</h6>
+                                <p class="card-text">1977</p>
+                            </div>
+                            <span class="position-absolute rotazione z-3 top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                Rock
+                                <span class="visually-hidden rotazione">unread messages</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- TABELLA CON TRACCE E BOTTONI e MODALE-->
+        <section class="album-tracks" id="tabella">
+            <button onclick="showHide(this)" class="btn btn-secondary">
+				Show / Hide <br> "the Table"
+			</button>
+            <div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+                            <h2>Queen - Live at the Rainbow </h2>
+                            <!-- TABELLA  -->
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Title</th>
+                                        <th scope="col">Artist</th>
+                                        <th scope="col">Duration</th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>...</td>
+                                        <td>Queen</td>
+                                        <td>1:45</td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>2</th>
+                                        <td>...</td>
+                                        <td>Queen</td>
+                                        <td>4:53</td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>3</th>
+                                        <td></td>
+                                        <td>Queen</td>
+                                        <td>3:30</td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>4</th>
+                                        <td></td>
+                                        <td>Queen</td>
+                                        <td>4:50</td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>5</th>
+                                        <td></td>
+                                        <td>Queen</td>
+                                        <td>4:20</td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>6</th>
+                                        <td></td>
+                                        <td>Queen</td>
+                                        <td>4:08</td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>7</th>
+                                        <td></td>
+                                        <td>Queen</td>
+                                        <td>5:25</td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>8</th>
+                                        <td></td>
+                                        <td>Queen</td>
+                                        <td>3:18</td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>9</th>
+                                        <td></td>
+                                        <td>Queen</td>
+                                        <td>4:12</td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                    </tr>
+                                    <tr>
+                                        <th>10</th>
+                                        <td></td>
+                                        <td>Queen</td>
+                                        <td>3:22</td>
+                                        <td><button onclick="deleteRowTable(this)" type="button" class="btn btn-danger delete-row">ELIMINA</button></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="col text-center">
+                                <button type="button" id="add-track" class="btn btn-success px-4 py-2 my-2"
+                                    data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <span>Aggiungi traccia</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MODALE -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Aggiungi la tua traccia</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body text-center container-fluid">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <p class="mt-2 mb-0">Numero traccia:</p>
+                                        <input type="number" placeholder="none">
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mt-2 mb-0">Titolo traccia:</p>
+                                        <input type="text" placeholder="titolo traccia">
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mt-2 mb-0">Nome artista:</p>
+                                        <input type="text" placeholder="nome artista">
+                                    </div>
+                                    <div class="col-6">
+                                        <p class="mt-2 mb-0">Durata traccia:</p>
+                                        <input type="number" step="0.01" placeholder="durata in minuti">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer d-flex justify-content-center">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- MY BEST -->
+        
+        <div class="container margin-y">
+            <div>
+                <button onclick="showHide(this)" class="btn btn-secondary mb-5">
+                    Show / Hide <br> "My Best Album"
+                </button>
+                <div class="row">
+                    <h4 id="favorite-album" class="pb-3">Ti svelo l'album che sto ascoltando a ripetizione..</h4>
+                    <div class="card mb-3 px-0">
+                        <div class="row g-0">
+                            <div class="col-md-8">
+                                <img src="assets/Rainbow.jpg" class="img-fluid rounded-start w-100" alt="...">
+                            </div>
+                            <div class="col-md-4 h-100">
+                                <div class="card-body">
+                                    <h5 class="card-title my-2 px-3">Live at the Rainbow</h5>
+                                    <h6 class="my-2 px-3">Queen</h6>
+                                    <p class="card-text my-2 px-3">1974</p>
+
+                                    <!-- LISTA BRANI -->
+                                    <div class="col-12 my-2 px-3">
+                                        <p>
+                                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                                aria-controls="collapseWidthExample">
+                                                Clicca per vedere la lista dei brani
+                                            </button>
+                                        </p>
+                                        <div style="min-height: fit-content;">
+                                            <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                                                <div class="card card-body" style="width: fit-content;">
+                                                    <ul id="track-list">
+                                                        <li class="my-2">1. </li>
+                                                        <li class="my-2">2. </li>
+                                                        <li class="my-2">3. </li>
+                                                        <li class="my-2">4. </li>
+                                                        <li class="my-2">5. </li>
+                                                        <li class="my-2">6. </li>
+                                                        <li class="my-2">7. </li>
+                                                        <li class="my-2">8. </li>
+                                                        <li class="my-2">9. </li>
+                                                        <li class="my-2">10. </li>
+                                                        <li class="my-2">11. </li>
+                                                        <li class="my-2">12. </li>
+                                                        <li class="my-2">13. </li>
+                                                        <li class="my-2">14. </li>
+                                                        <li class="my-2">15. </li>
+                                                        <li class="my-2">16. </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TO AVOID -->
+        <div class="container col-lg-12" id="to-avoid">
+            <button onclick="showHide(this)" class="btn btn-secondary mb-2">
+                Show / Hide <br> "Album to Avoid"
+            </button>
+            <div class="carousel row col-lg-12">
+                <h4 id="worste-album col-5">E quelli da evitare...</h4>
+                <div id="carouselExampleCaptions" class="carousel slide col-sm-3 container myCarousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/Rock_.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/maneskin.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/ligabue.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div id="carouselExampleCaptions2" class="carousel slide col-sm-3 container myCarousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions2" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/Rock_.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/fedez.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/lazza.jpg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+                <div id="carouselExampleCaptions3" class="carousel slide col-sm-3 container myCarousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleCaptions3" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/Trap_.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <i class="fa-solid fa-comment-music"></i>
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <i class="fa-solid fa-comment-music"></i>
+                            <div class="carousel-caption d-none d-md-block">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions3"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions3"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- REVIEWS -->
+        <div class="container my-5" style="min-height: fit-content;">
+            <h4>..Tu che ne pensi? Sono curioso di sentire la tua opinione!</h4>
+            <div class="comment">
+                <textarea id="reviews" placeholder="Fammi sapere i tuoi gusti musicali!" rows="8" cols="50" class="my-2 w-100 h-100"></textarea>
+                <input type="submit" value="Invia recensione">
+            </div>
+        </div>
+    </main>
+
+    <footer id="my-footer">
+        <div class="row w-100">
+            <div class="footerCategories container col-10">
+                <a href="#"><span>Contact us</span></a>
+                <a href="#"><span>Privacy Policy</span></a>
+                <a href="#"><span>About us</span></a>
+                <a href="#"><span>Shop</span></a>
+            </div>
+            <div class="container logoFooter">
+                <div class="logo">
+                    <i class="fa-solid fa-comment-music"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/141df55af4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="m3d6.js"></script>
+</body>
+
+</html>
